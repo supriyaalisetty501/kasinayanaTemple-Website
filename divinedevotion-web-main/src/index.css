@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu:ital@0;1&family=Noto+Serif+Telugu:wght@400;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Kasinayana Ashramam - Devotional Design System
+   Saffron, gold, ivory. All colors HSL.
+*/
+
+@layer base {
+  :root {
+    /* Sacred temple palette: ivory · saffron · royal gold · deep maroon · peacock teal */
+    --background: 42 60% 96%;          /* soft ivory */
+    --foreground: 0 55% 16%;           /* deep maroon ink */
+
+    --card: 44 75% 98%;
+    --card-foreground: 0 55% 16%;
+
+    --popover: 44 75% 98%;
+    --popover-foreground: 0 55% 16%;
+
+    --primary: 18 92% 46%;             /* sacred saffron */
+    --primary-foreground: 45 85% 97%;
+    --primary-glow: 28 100% 56%;       /* flame orange */
+
+    --secondary: 42 92% 50%;           /* royal temple gold */
+    --secondary-foreground: 0 55% 16%;
+
+    --muted: 38 50% 90%;
+    --muted-foreground: 15 28% 30%;
+
+    --accent: 350 72% 32%;             /* deep kumkum maroon */
+    --accent-foreground: 45 85% 97%;
+
+    --tertiary: 184 65% 28%;           /* peacock teal */
+    --tertiary-foreground: 45 85% 97%;
+
+    --destructive: 0 75% 40%;
+    --destructive-foreground: 45 85% 97%;
+
+    --border: 38 50% 78%;
+    --input: 38 45% 86%;
+    --ring: 18 92% 46%;
+
+    --radius: 0.85rem;
+
+    /* Devotional gradients */
+    --gradient-saffron: linear-gradient(135deg, hsl(350 72% 32%) 0%, hsl(14 88% 42%) 35%, hsl(22 95% 52%) 70%, hsl(42 95% 58%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38 92% 48%), hsl(48 96% 64%));
+    --gradient-maroon: linear-gradient(135deg, hsl(350 72% 26%), hsl(14 80% 38%));
+    --gradient-royal: linear-gradient(135deg, hsl(350 72% 30%) 0%, hsl(184 65% 28%) 100%);
+    --gradient-divine: linear-gradient(180deg, hsl(44 85% 96%) 0%, hsl(38 70% 88%) 50%, hsl(36 60% 82%) 100%);
+    --gradient-hero-overlay: linear-gradient(180deg, hsla(0,55%,12%,0.20) 0%, hsla(0,55%,12%,0.82) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 18px -4px hsl(18 92% 46% / 0.22);
+    --shadow-glow: 0 10px 40px -10px hsl(28 100% 56% / 0.55);
+    --shadow-deep: 0 20px 50px -20px hsl(0 55% 16% / 0.5);
+    --shadow-gold: 0 8px 28px -8px hsl(42 92% 50% / 0.55);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 42 60% 96%;
+    --sidebar-foreground: 0 55% 16%;
+    --sidebar-primary: 18 92% 46%;
+    --sidebar-primary-foreground: 45 85% 97%;
+    --sidebar-accent: 38 50% 90%;
+    --sidebar-accent-foreground: 0 55% 16%;
+    --sidebar-border: 38 50% 78%;
+    --sidebar-ring: 18 92% 46%;
+  }
+
+  .dark {
+    --background: 0 30% 8%;
+    --foreground: 44 70% 95%;
+    --card: 0 30% 11%;
+    --card-foreground: 44 70% 95%;
+    --popover: 0 30% 11%;
+    --popover-foreground: 44 70% 95%;
+    --primary: 28 100% 58%;
+    --primary-foreground: 0 30% 8%;
+    --secondary: 42 92% 55%;
+    --secondary-foreground: 0 30% 8%;
+    --muted: 0 20% 18%;
+    --muted-foreground: 44 40% 75%;
+    --accent: 350 75% 50%;
+    --accent-foreground: 44 70% 95%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 44 70% 95%;
+    --border: 0 20% 22%;
+    --input: 0 20% 22%;
+    --ring: 28 100% 58%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Noto Serif Telugu', sans-serif;
+  }
+  :lang(te), .lang-te {
+    font-family: 'Noto Serif Telugu', 'Tiro Telugu', serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', 'Noto Serif Telugu', serif;
+    @apply tracking-tight;
+  }
+  :lang(te) h1, :lang(te) h2, :lang(te) h3, :lang(te) h4,
+  .lang-te h1, .lang-te h2, .lang-te h3, .lang-te h4 {
+    font-family: 'Noto Serif Telugu', serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-saffron {
+    background: var(--gradient-saffron);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-gradient-saffron { background: var(--gradient-saffron); }
+  .bg-gradient-gold { background: var(--gradient-gold); }
+  .bg-gradient-maroon { background: var(--gradient-maroon); }
+  .bg-gradient-royal { background: var(--gradient-royal); }
+  .bg-gradient-divine { background: var(--gradient-divine); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-deep { box-shadow: var(--shadow-deep); }
+  .transition-smooth { transition: var(--transition-smooth); }
+
+  @keyframes flame-flicker {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.85; transform: scale(1.05); }
+  }
+  .animate-flicker { animation: flame-flicker 2.5s ease-in-out infinite; }
+
+  @keyframes float-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-float-up { animation: float-up 0.8s ease-out both; }
+}
+
+/* Hide scrollbar for horizontal mobile nav */
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
