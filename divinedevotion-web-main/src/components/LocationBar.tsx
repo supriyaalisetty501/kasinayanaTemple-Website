@@ -43,7 +43,7 @@ export const LocationBar = () => {
         <span className="hidden h-4 w-px bg-primary-foreground/40 sm:inline-block" />
         <span className="inline-flex items-center gap-1.5">
           <Clock className="h-4 w-4" />
-          {lang === "te" ? "24 గంటలూ తెరిచి ఉంటుంది" : "Open 24 / 7"}
+          {lang === "te" ? "24 గంటలూ తెరిచి ఉంటుంది" : "Open 24/7"}
         </span>
       </div>
     </div>
