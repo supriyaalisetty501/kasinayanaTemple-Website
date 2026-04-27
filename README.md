@@ -3,11 +3,9 @@
 A premium **freelance web development project** created for **Kasinayana Ashramam Chowduru**. This modern temple website was designed to help devotees access temple information, timings, services, events, donations, and updates through a professional digital experience.
 
 ---
-
 ## 🌸 Live Website
 
 🔗 **[https://kasinayanachowduru.netlify.app/](https://kasinayanachowduru.netlify.app/)**
-
 ---
 
 ## 💼 Project Overview
