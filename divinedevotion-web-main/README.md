@@ -4,7 +4,7 @@ A premium **freelance web development project** created for **Kasinayana Ashrama
 
 ---
 
-## 🌸 Live Website
+## 🌸 Live Website -you can see website here
 
 🔗 **[https://kasinayanachowduru.netlify.app/](https://kasinayanachowduru.netlify.app/)**
 
@@ -32,6 +32,7 @@ A premium **freelance web development project** created for **Kasinayana Ashrama
 * 🗺️ Integrated location map
 * 🔐 Admin login/dashboard system
 * 📱 Mobile responsive layout
+* Social Service Infromation
 
 ---
 
