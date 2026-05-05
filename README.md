@@ -1,7 +1,7 @@
 # 🪔 Kasinayana Ashramam Chowduru Website
 
 A premium **freelance web development project** created for **Kasinayana Ashramam Chowduru**. This modern temple website was designed to help devotees access temple information, timings, services, events, donations, and updates through a professional digital experience.
-<img src="readme.png" height="100" width="100">
+![Project Output](readme.png)
 ---
 
 ## 🌸 Live Website
